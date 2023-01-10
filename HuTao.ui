@@ -1,0 +1,964 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HuTaoClass</class>
+ <widget class="QWidget" name="HuTaoClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>945</width>
+    <height>618</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>945</width>
+    <height>618</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>945</width>
+    <height>618</height>
+   </size>
+  </property>
+  <property name="sizeIncrement">
+   <size>
+    <width>7</width>
+    <height>1</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>胡桃蒸发伤害圣遗物选择期望最大系统</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>330</y>
+     <width>821</width>
+     <height>251</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>生之花</string>
+    </attribute>
+    <widget class="QTableWidget" name="tableWidget">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>821</width>
+       <height>221</height>
+      </rect>
+     </property>
+     <attribute name="horizontalHeaderMinimumSectionSize">
+      <number>31</number>
+     </attribute>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>95</number>
+     </attribute>
+     <attribute name="verticalHeaderDefaultSectionSize">
+      <number>36</number>
+     </attribute>
+     <column>
+      <property name="text">
+       <string>类型</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>暴击率</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>爆伤</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>大生命</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>小生命</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>大攻击</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>小攻击</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>精通</string>
+      </property>
+     </column>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>死之羽</string>
+    </attribute>
+    <widget class="QTableWidget" name="tableWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>821</width>
+       <height>221</height>
+      </rect>
+     </property>
+     <attribute name="horizontalHeaderMinimumSectionSize">
+      <number>31</number>
+     </attribute>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>95</number>
+     </attribute>
+     <attribute name="verticalHeaderDefaultSectionSize">
+      <number>36</number>
+     </attribute>
+     <column>
+      <property name="text">
+       <string>类型</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>暴击率</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>爆伤</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>大生命</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>小生命</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>大攻击</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>小攻击</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>精通</string>
+      </property>
+     </column>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_3">
+    <attribute name="title">
+     <string>时之沙</string>
+    </attribute>
+    <widget class="QTableWidget" name="tableWidget_3">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>821</width>
+       <height>221</height>
+      </rect>
+     </property>
+     <attribute name="horizontalHeaderMinimumSectionSize">
+      <number>31</number>
+     </attribute>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>95</number>
+     </attribute>
+     <attribute name="verticalHeaderDefaultSectionSize">
+      <number>36</number>
+     </attribute>
+     <column>
+      <property name="text">
+       <string>类型</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>暴击率</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>爆伤</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>大生命</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>小生命</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>大攻击</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>小攻击</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>精通</string>
+      </property>
+     </column>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_4">
+    <attribute name="title">
+     <string>空之杯</string>
+    </attribute>
+    <widget class="QTableWidget" name="tableWidget_4">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>821</width>
+       <height>221</height>
+      </rect>
+     </property>
+     <attribute name="horizontalHeaderMinimumSectionSize">
+      <number>31</number>
+     </attribute>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>95</number>
+     </attribute>
+     <attribute name="verticalHeaderDefaultSectionSize">
+      <number>36</number>
+     </attribute>
+     <column>
+      <property name="text">
+       <string>类型</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>暴击率</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>爆伤</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>大生命</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>小生命</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>大攻击</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>小攻击</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>精通</string>
+      </property>
+     </column>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_5">
+    <attribute name="title">
+     <string>理之冠</string>
+    </attribute>
+    <widget class="QTableWidget" name="tableWidget_5">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>821</width>
+       <height>221</height>
+      </rect>
+     </property>
+     <attribute name="horizontalHeaderMinimumSectionSize">
+      <number>31</number>
+     </attribute>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>95</number>
+     </attribute>
+     <attribute name="verticalHeaderDefaultSectionSize">
+      <number>36</number>
+     </attribute>
+     <column>
+      <property name="text">
+       <string>类型</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>暴击率</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>爆伤</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>大生命</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>小生命</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>大攻击</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>小攻击</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>精通</string>
+      </property>
+     </column>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>160</y>
+     <width>821</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QLabel" name="label_2">
+      <property name="font">
+       <font>
+        <family>AcadEref</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>暴击率</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_3">
+      <property name="font">
+       <font>
+        <family>AcadEref</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>爆伤</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_4">
+      <property name="font">
+       <font>
+        <family>AcadEref</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>大生命</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_5">
+      <property name="font">
+       <font>
+        <family>AcadEref</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>小生命</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_6">
+      <property name="font">
+       <font>
+        <family>AcadEref</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>大攻击</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_7">
+      <property name="font">
+       <font>
+        <family>AcadEref</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>小攻击</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_8">
+      <property name="font">
+       <font>
+        <family>AcadEref</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>精通</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>210</y>
+     <width>821</width>
+     <height>37</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <widget class="QLineEdit" name="x1">
+      <property name="font">
+       <font>
+        <family>宋体</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="x2">
+      <property name="font">
+       <font>
+        <family>宋体</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="x3">
+      <property name="font">
+       <font>
+        <family>宋体</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="x4">
+      <property name="font">
+       <font>
+        <family>宋体</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="x5">
+      <property name="font">
+       <font>
+        <family>宋体</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="x6">
+      <property name="font">
+       <font>
+        <family>宋体</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="x7">
+      <property name="font">
+       <font>
+        <family>宋体</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>60</y>
+     <width>235</width>
+     <height>77</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_3">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="font">
+         <font>
+          <family>AcadEref</family>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="mouseTracking">
+         <bool>true</bool>
+        </property>
+        <property name="tabletTracking">
+         <bool>true</bool>
+        </property>
+        <property name="text">
+         <string>圣遗物</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="hclass">
+        <property name="font">
+         <font>
+          <family>AcadEref</family>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <item>
+         <property name="text">
+          <string>生之花</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>死之羽</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>时之沙</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>空之杯</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>理之冠</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <widget class="QLabel" name="label_9">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="font">
+         <font>
+          <family>AcadEref</family>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="mouseTracking">
+         <bool>true</bool>
+        </property>
+        <property name="tabletTracking">
+         <bool>true</bool>
+        </property>
+        <property name="text">
+         <string>种类</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="rclass">
+        <property name="font">
+         <font>
+          <family>AcadEref</family>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <item>
+         <property name="text">
+          <string>魔女</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>其他</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>61</x>
+     <y>260</y>
+     <width>821</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_4">
+    <item>
+     <widget class="QPushButton" name="abutton">
+      <property name="font">
+       <font>
+        <family>AcadEref</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>添加</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="dbutton">
+      <property name="font">
+       <font>
+        <family>AcadEref</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>删除</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="dbutton_2">
+      <property name="font">
+       <font>
+        <family>AcadEref</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>保存</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="dbutton_3">
+      <property name="font">
+       <font>
+        <family>AcadEref</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>读取</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="dbutton_4">
+      <property name="font">
+       <font>
+        <family>AcadEref</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>计算</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="dbutton_5">
+      <property name="font">
+       <font>
+        <family>AcadEref</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>恢复</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="dbutton_6">
+      <property name="font">
+       <font>
+        <family>AcadEref</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>清空</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <zorder>dbutton_5</zorder>
+  <zorder>tabWidget</zorder>
+  <zorder>layoutWidget</zorder>
+  <zorder>layoutWidget</zorder>
+  <zorder>layoutWidget</zorder>
+  <zorder>layoutWidget</zorder>
+  <zorder>dbutton_6</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="HuTao.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>abutton</sender>
+   <signal>clicked()</signal>
+   <receiver>HuTaoClass</receiver>
+   <slot>addValues()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>103</x>
+     <y>276</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>372</x>
+     <y>29</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>dbutton</sender>
+   <signal>clicked()</signal>
+   <receiver>HuTaoClass</receiver>
+   <slot>deleteValues()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>245</x>
+     <y>273</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>372</x>
+     <y>62</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>hclass</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>HuTaoClass</receiver>
+   <slot>transformPage(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>157</x>
+     <y>114</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>371</x>
+     <y>102</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tabWidget</sender>
+   <signal>currentChanged(int)</signal>
+   <receiver>HuTaoClass</receiver>
+   <slot>transformTab(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>454</x>
+     <y>341</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>424</x>
+     <y>133</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>dbutton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>HuTaoClass</receiver>
+   <slot>compute()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>559</x>
+     <y>273</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>571</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>dbutton_5</sender>
+   <signal>clicked()</signal>
+   <receiver>HuTaoClass</receiver>
+   <slot>recover()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>683</x>
+     <y>277</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>686</x>
+     <y>32</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>dbutton_6</sender>
+   <signal>clicked()</signal>
+   <receiver>HuTaoClass</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>789</x>
+     <y>268</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>804</x>
+     <y>24</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>dbutton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>HuTaoClass</receiver>
+   <slot>save()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>350</x>
+     <y>277</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>553</x>
+     <y>78</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>dbutton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>HuTaoClass</receiver>
+   <slot>read()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>480</x>
+     <y>273</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>552</x>
+     <y>119</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>addValues()</slot>
+  <slot>deleteValues()</slot>
+  <slot>transformPage(int)</slot>
+  <slot>transformTab(int)</slot>
+  <slot>compute()</slot>
+  <slot>recover()</slot>
+  <slot>clear()</slot>
+  <slot>save()</slot>
+  <slot>read()</slot>
+ </slots>
+</ui>
