@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32228.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HuTao", "HuTao.vcxproj", "{4FCECFDE-8775-4EDF-BCE8-6948E6AF4765}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup1", "..\Setup1\Setup1.vdproj", "{2292F765-6D83-4D79-8DE8-F86DB872BB52}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4FCECFDE-8775-4EDF-BCE8-6948E6AF4765}.Debug|x64.ActiveCfg = Debug|x64
+		{4FCECFDE-8775-4EDF-BCE8-6948E6AF4765}.Debug|x64.Build.0 = Debug|x64
+		{4FCECFDE-8775-4EDF-BCE8-6948E6AF4765}.Release|x64.ActiveCfg = Release|x64
+		{4FCECFDE-8775-4EDF-BCE8-6948E6AF4765}.Release|x64.Build.0 = Release|x64
+		{2292F765-6D83-4D79-8DE8-F86DB872BB52}.Debug|x64.ActiveCfg = Debug
+		{2292F765-6D83-4D79-8DE8-F86DB872BB52}.Release|x64.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B6D06257-1195-4F50-A192-9E2ACE7C4875}
+	EndGlobalSection
+EndGlobal

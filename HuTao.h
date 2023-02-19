@@ -3,9 +3,12 @@
 #include <QtWidgets/QWidget>
 #include <ui_HuTao.h>
 #include<vector>
+#include<QVector>
 #include<cstring>
 #include "tangZhu.h"
+#include"Ganyu.h"
 #include"holyRelic.h"
+#include"chara.h"
 
 class HuTao : public QWidget
 {
@@ -20,6 +23,7 @@ private:
     Ui::HuTaoClass ui;
     QVector<QString> X;
     tangZhu tao;
+    Ganyu ganyu;
 
     vector<holy_Relic> Flower;
     vector<holy_Relic> Feather;
@@ -32,8 +36,10 @@ private:
     QTableWidget** getTable();
     void load_data();
     void load(QTableWidget** table, vector<holy_Relic>& holyR);
-    void showmax(int tangzhu[]);
-    void showtao(QTableWidget** table, int n);
+    void showmax(int cha[]);
+    void showchara(QTableWidget** table, int n);
+    void showdata(double data[]);
+    void computeChara(chara& cha);
   
 private slots:
     

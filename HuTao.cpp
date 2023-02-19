@@ -2,6 +2,8 @@
 #include<cstring>
 #include<fstream>
 #include <sstream>
+#include<QDebug>
+
 using namespace std;
 
 HuTao::HuTao(QWidget *parent)
@@ -16,6 +18,8 @@ HuTao::~HuTao()
 
 }
     
+
+
 void HuTao::addX()
 {
     X.clear();
@@ -97,18 +101,21 @@ void HuTao::transformTab(int n)
 void HuTao::load(QTableWidget** table, vector<holy_Relic>& holyR)
 {
     holyR.clear();
-    int s = 1;
+    int s = 0;
     int n = (*table)->rowCount();
     double nu[7] = { 0 };
     for (int i = 0; i < n; i++)
     {
         QString sc = (*table)->item(i, 0)->text();
-        QString sclass = ui.rclass->itemText(0);
-        if (sclass != sc)s = 0;
+        QString sclass1 = ui.rclass->itemText(0);
+        QString sclass2 = ui.rclass->itemText(1);
+        if (sc == sclass1)s = 1;
+        else if (sc == sclass2)s = 2;
+        else s = 0;
         for (int j = 1; j < 8; j++)
         {
             QString str = (*table)->item(i, j)->text();
-            int num = str.toInt();
+            double num = str.toDouble();
             nu[j - 1] = num;
         }
         holyR.push_back(holy_Relic(nu[0], nu[1], nu[2], nu[3], nu[4], nu[5], nu[6], s));
@@ -124,7 +131,7 @@ void HuTao::load_data()
     load(&ui.tableWidget_5, Crown);
 }
 
-void HuTao::showtao(QTableWidget** table, int n)
+void HuTao::showchara(QTableWidget** table, int n)
 {
     (*table)->insertRow(0);
     for (int i = 0; i < 8; i++)
@@ -134,21 +141,48 @@ void HuTao::showtao(QTableWidget** table, int n)
     }
 }
 
-void HuTao::showmax(int tangzhu[])
+void HuTao::showdata(double data[])
 {
-    showtao(&ui.tableWidget, tangzhu[0]);
-    showtao(&ui.tableWidget_2, tangzhu[1]);
-    showtao(&ui.tableWidget_3, tangzhu[2]);
-    showtao(&ui.tableWidget_4, tangzhu[3]);
-    showtao(&ui.tableWidget_5, tangzhu[4]);
+    QString str = QString::number(data[0]);
+    ui.s1->setText(str);
+    str = QString::number(data[1]);
+    ui.s2->setText(str);
+    str = QString::number(data[2]);
+    ui.s3->setText(str);
+    str = QString::number(data[3]);
+    ui.s4->setText(str);
+    str = QString::number(data[4]);
+    ui.s5->setText(str);
+}
+
+void HuTao::showmax(int cha[])
+{
+    showchara(&ui.tableWidget, cha[0]);
+    showchara(&ui.tableWidget_2, cha[1]);
+    showchara(&ui.tableWidget_3, cha[2]);
+    showchara(&ui.tableWidget_4, cha[3]);
+    showchara(&ui.tableWidget_5, cha[4]);
 }
 
 void HuTao::compute()
 {
     if (!(ui.tableWidget->isEnabled()))return;
 
+    if (ui.character->currentIndex() == 0)
+    {
+        computeChara(tao);
+    }
+    else if (ui.character->currentIndex() == 1)
+    {
+        computeChara(ganyu);
+    }
+}
+
+void HuTao::computeChara(chara& cha)
+{
     load_data();
-    int maxtao[5] = { 0 };
+    int maxC[5] = { 0 };
+    double maxS[5] = { 0 };
     double maxE = 0;
     int n = 0;
     for (int i = 0; i < Flower.size(); i++)
@@ -161,25 +195,35 @@ void HuTao::compute()
                 {
                     for (int m = 0; m < Crown.size(); m++)
                     {
-                        int nclass = Flower[i].sclass + Feather[j].sclass + Hourglass[k].sclass + Cup[l].sclass + Crown[m].sclass;
-                        if (nclass < 4)continue;
-                        tao.HolyR(Flower[i], Feather[j], Hourglass[k], Cup[l], Crown[m]);
-                        tao.data();
-                        if (tao.E4() > maxE)
+                        cha.HolyR(Flower[i], Feather[j], Hourglass[k], Cup[l], Crown[m]);
+                        cha.data();
+                        double E;
+                        if (ui.aclass->currentIndex() == 0)E = cha.E1();
+                        else E = cha.E2();
+                        //------------------//
+                        //qDebug() << E;
+                        //-----------------//
+                        if (E > maxE)
                         {
-                            maxtao[0] = i;
-                            maxtao[1] = j;
-                            maxtao[2] = k;
-                            maxtao[3] = l;
-                            maxtao[4] = m;
-                            maxE = tao.E4();
+                            maxC[0] = i;
+                            maxC[1] = j;
+                            maxC[2] = k;
+                            maxC[3] = l;
+                            maxC[4] = m;
+                            maxS[0] = cha.life;
+                            maxS[1] = cha.attack;
+                            maxS[2] = cha.baoji;
+                            maxS[3] = cha.baoshang;
+                            maxS[4] = cha.jingtong;
+                            maxE = E;
                         }
                     }
                 }
             }
         }
     }
-    showmax(maxtao);
+    showmax(maxC);
+    showdata(maxS);
     ui.tableWidget->setEnabled(false);
     ui.tableWidget_2->setEnabled(false);
     ui.tableWidget_3->setEnabled(false);
